@@ -1,0 +1,141 @@
+{   
+"supply": "1",
+"name": "",
+"symbol": "",
+"owner": "",
+"quantity": "0",
+"decimals": 0,
+"tokenProperties": {
+    "Id": "A unique ID like GUID/UUID or public key for the claim.",
+    "MbpId": "The unique Id of the parent modularBenefitProject",
+    "ProcessedClaimId": "The unique Id of the processed claim",
+    "Quantity": "A estimated sum of the total benefit for the completed claim.",
+    "Issuer": "Should be the Project Developer",
+    "Processor": "All verifiers that are able to process this claim, required to retire this claim as processed."
+    },
+"ProcessedClaimId": [
+    {
+        "name": "ProcessedClaimId",
+        "valueDescription": "Records the processed claim id that retires the benefit claim.",
+        "templateValue": "",
+        "properties":[]
+    }
+    ],
+"Role": [
+    {
+        "name": "Role",
+        "valueDescription": "A group or list an account can be a member or be in.",
+        "templateValue": "Submitters"
+    }
+    ],
+"ClaimSource": [
+    {
+        "name": "ClaimSource",
+        "valueDescription": "Contains the values for the ClaimSource.",
+        "templateValue": "",
+        "properties":
+        [
+        {
+            "name": "Id",
+            "valueDescription": "A globally unique id - UUID, GUID, etc.",
+            "templateValue": ""
+        },
+        {
+            "name": "ClaimId",
+            "valueDescription": "The parent ecological claim identifier that the source is registered for.",
+            "templateValue": ""
+        },
+        {
+            "name": "ClaimSourceType",
+            "valueDescription": "From the standard list of source types found in common.proto",
+            "templateValue": ""
+        },
+        {
+            "name": "SourceIdentifier",
+            "valueDescription": "This can be a unique identifier for a device, a serial number, for an application/user can be the appId and UserId, for reference data it can be the URI for the reference source.",
+            "templateValue": ""
+        }
+        ]
+    }
+    ],
+"EcologicalCheckpoint": [
+    {
+        "name": "EcologicalCheckpoint",
+        "valueDescription": "Contains the values for the EcologicalCheckpoint.",
+        "properties": [
+        {
+            "name": "Id",
+            "valueDescription": "A globally unique id - UUID, GUID, etc.",
+            "templateValue": ""
+        },
+        {
+            "name": "ClaimId",
+            "valueDescription": "A globally unique id - UUID, GUID, etc.",
+            "templateValue": ""
+        },
+        {
+            "name": "SourceId",
+            "valueDescription": "A globally unique id - UUID, GUID, etc.",
+            "templateValue": ""
+        },
+        {
+            "name": "EFBefore",
+            "valueDescription": "Environmental Factor before project activities - i.e. soil carbon measurement before.",
+            "templateValue": ""
+        },
+        {
+            "name": "EFAfter",
+            "valueDescription": "Environmental Factor after project activities - i.e. soil carbon measurement after.",
+            "templateValue": ""
+        }
+        ],
+        "repeated": false
+    }
+    ],
+"VerifiedLink": [
+    {     "name": "VerifiedLink",
+            "valueDescription": "The Verified Link type to add to the project."
+                }
+    ],
+"DateRange": [
+    {
+        "name": "StartDate",
+        "valueDescription": "Returning the simple date value."
+        },
+        {
+        "name": "StartTimeStamp",
+        "valueDescription": "Returning the granular start timestamp."
+        },
+        {
+        "name": "EndDate",
+        "valueDescription": "Returning the simple date value."
+        },
+        {
+        "name": "EndTimeStamp",
+        "valueDescription": "Returning the granular start timestamp."
+        }
+],
+"CoBenefits": [
+    {
+    "name": "CoBenefit",
+    "valueDescription": "Add a CoBenefit value - see control file co-benefit.proto.",
+    "properties": [
+    {
+        "name": "BenefitCategory",
+        "valueDescription": "A selection from a list of categories, ex. see the co-benefit.proto enumeration of BenefitCategories.",
+        "templateValue": ""
+    },
+    {
+        "name": "Description",
+        "valueDescription": "A description of the co-benefit that is not captured via the category.",
+        "templateValue": ""
+    },
+    {
+        "name": "RatingScore",
+        "valueDescription": "A placeholder for some kind of rating or scoring of the relative co-benefit.",
+        "templateValue": ""
+    }
+    ]
+    }
+]
+}
