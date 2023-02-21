@@ -1,0 +1,235 @@
+{  
+"supply": "",
+"name": "",
+"symbol": "",
+"owner": "",
+"quantity": "",
+"decimals": 0,
+"tokenProperties": {
+        "issuer": "Should be the Issuing or Standard Registry",
+        "minters": "All Issuing or Standard registries that are able to mint and become the issuer of an instance."
+    },
+"CoreCarbonPrinciples": [
+    {
+        "name": "CoreCarbonPrinciples",
+        "valueDescription": "Contains the values for the CoreCarbonPrinciples.",
+        "templateValue": "",
+        "properties":
+        [
+        {
+            "name": "AssetId",
+            "valueDescription": "typically the issuing verifiers master id or serial number that resides on their registry system. Could be empty or the same as the token's id if not needed.",
+            "templateValue": ""
+        },
+        {
+            "name": "IssuanceDate",
+            "valueDescription": "Refers to the date of issuance usually in the DD/MM/YYYY or MM/DD/YYYY.",
+            "templateValue": ""
+        },
+        {
+            "name": "Vintage",
+            "valueDescription": "Refers to the year that the emissions reduction or ecological benefit took place //The principle that a project activity is additional if the resulting emission reductions are lower than what would have happened in the absence of the activity.",
+            "templateValue": ""
+        },
+        {
+            "name": "GenerationType",
+            "valueDescription": "An ecological product can be a generated value based on verified historical results or ex-ante, meaning a predicted result. See the enum type in ecological-asset.proto for example.",
+            "templateValue": ""
+        },
+        {
+            "name": "QualityStandard",
+            "valueDescription": "The quality standard used to determine and issue a ecological benefit token. These can be a voluntary or compliance/regulatory standard. See the ecological-asset.proto enum for an example.",
+            "templateValue": ""
+        }
+        ]
+    }
+    ],
+"MitigationActivity": [
+    {
+        "name": "MitigationActivity",
+        "valueDescription": "Contains the SetMitigationActivity property values.",
+        "templateValue": "",
+        "properties":
+        [
+        {
+            "name": "Category",
+            "valueDescription": "Reduction or Removal",
+            "templateValue": ""
+        },
+        {
+            "name": "Method",
+            "valueDescription": "Biological or Technological or Both",
+            "templateValue": ""
+        }
+        ]
+    }
+    ],
+"Durability": [
+    {
+        "name": "Durability",
+        "valueDescription": "Contains the values for Durability.",
+        "templateValue": "",
+        "properties":
+        [
+        {
+            "name": "Storage",
+            "valueDescription": "A selection from a list of storage types, ex. see the durability.proto enumeration of types.",
+            "templateValue": ""
+        },
+        {
+            "name": "Years",
+            "valueDescription": "The length in years the carbon is expected to be sequestered for.",
+            "templateValue": ""
+        },
+        {
+            "name": "Degradable",
+            "valueDescription": "If or when degradation of the sequestration can be expected.",
+            "templateValue": "",
+            "properties":
+            [
+            {
+                "name": "Percentage",
+                "valueDescription": "A 0 = no degradation possible, 100 = all sequestered should be expected to be released",
+                "templateValue": ""
+            },
+            {
+                "name": "Factor",
+                "valueDescription": "The factor of 25 = .25 per year if linear or exponential starts at 25% of durability years.",
+                "templateValue": ""
+            },
+            {
+                "name": "DegradationType",
+                "valueDescription": "A selection from a list of degradation types, ex. see the durability.proto enumeration of types.",
+                "templateValue": ""
+            }
+            ]
+        },
+        {
+            "name": "ReversalMitigation",
+            "valueDescription": "For removals the risk of reversal needs to be defined and a mitigation strategy should be identified.",
+            "templateValue": "",
+            "properties":
+            [
+            {
+                "name": "ReversalRisk",
+                "valueDescription": "A selection from durability.proto - low, mid, high",
+                "templateValue": ""
+            },
+            {
+                "name": "DurabilityInsuranceType",
+                "valueDescription": "A selection from durability.proto",
+                "templateValue": ""
+            },
+            {
+                "name": "InsuranceProvider",
+                "valueDescription": "A selection from durability.proto",
+                "templateValue": ""
+            }
+            ]
+        }
+        ]
+    }
+    ],
+"VerifiedLink":[
+    {
+        "name": "VerifiedLink",
+        "valueDescription": "Contains a Verified Link to the insurance policy.",
+        "templateValue": "",
+        "propertyInvocations": [
+        {
+            "name": "GetVerifiedLink",
+            "description": "Request the a Verified Link.",
+            "request": {
+            "controlMessageName": "GetVerifiedLinkRequest",
+            "inputParameters": [],
+            "description": "The request"
+            },
+            "response": {
+            "controlMessageName": "GetVerifiedLinkResponse",
+            "outputParameters": [
+                {
+                "name": "VerifiedLink",
+                "valueDescription": "Returning the Verified Link for insurance policy."
+                }
+            ]
+            }
+        }
+        ]
+    }
+    ],
+"CoBenefit": [
+        {
+        "name": "CoBenefit",
+        "valueDescription": "Contains the values for the CoBenefit.",
+        "templateValue": "",
+        "properties":
+        [
+        {
+            "name": "BenefitCategory",
+            "valueDescription": "A selection from a list of categories, ex. see the co-benefit.proto enumeration of BenefitCategories.",
+            "templateValue": ""
+        },
+        {
+            "name": "Description",
+            "valueDescription": "A description of the co-benefit that is not captured via the category.",
+            "templateValue": ""
+        },
+        {
+            "name": "RatingScore",
+            "valueDescription": "A placeholder for some kind of rating or scoring of the relative co-benefit.",
+            "templateValue": ""
+        }
+        ]
+        }
+        ],
+"CoBenefit2": [
+        {
+        "name": "CoBenefit",
+        "valueDescription": "Contains the values for the CoBenefit.",
+        "templateValue": "",
+        "properties":
+        [
+        {
+            "name": "BenefitCategory",
+            "valueDescription": "A selection from a list of categories, ex. see the co-benefit.proto enumeration of BenefitCategories.",
+            "templateValue": ""
+        },
+        {
+            "name": "Description",
+            "valueDescription": "A description of the co-benefit that is not captured via the category.",
+            "templateValue": ""
+        },
+        {
+            "name": "RatingScore",
+            "valueDescription": "A placeholder for some kind of rating or scoring of the relative co-benefit.",
+            "templateValue": ""
+        }
+        ]
+        }
+        ],
+"CoBenefit3": [
+        {
+        "name": "CoBenefit",
+        "valueDescription": "Contains the values for the CoBenefit.",
+        "templateValue": "",
+        "properties":
+        [
+        {
+            "name": "BenefitCategory",
+            "valueDescription": "A selection from a list of categories, ex. see the co-benefit.proto enumeration of BenefitCategories.",
+            "templateValue": ""
+        },
+        {
+            "name": "Description",
+            "valueDescription": "A description of the co-benefit that is not captured via the category.",
+            "templateValue": ""
+        },
+        {
+            "name": "RatingScore",
+            "valueDescription": "A placeholder for some kind of rating or scoring of the relative co-benefit.",
+            "templateValue": ""
+        }
+        ]
+        }
+        ]
+}
