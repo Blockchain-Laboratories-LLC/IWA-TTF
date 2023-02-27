@@ -114,28 +114,5 @@
         "name": "EndTimeStamp",
         "valueDescription": "Returning the granular start timestamp."
         }
-],
-"CoBenefits": [
-    {
-    "name": "CoBenefit",
-    "valueDescription": "Add a CoBenefit value - see control file co-benefit.proto.",
-    "properties": [
-    {
-        "name": "BenefitCategory",
-        "valueDescription": "A selection from a list of categories, ex. see the co-benefit.proto enumeration of BenefitCategories.",
-        "templateValue": ""
-    },
-    {
-        "name": "Description",
-        "valueDescription": "A description of the co-benefit that is not captured via the category.",
-        "templateValue": ""
-    },
-    {
-        "name": "RatingScore",
-        "valueDescription": "A placeholder for some kind of rating or scoring of the relative co-benefit.",
-        "templateValue": ""
-    }
-    ]
-    }
 ]
 }
